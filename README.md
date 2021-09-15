@@ -1,2 +1,2 @@
 # 36-650
-Statistical Computing Repository 
+Hi, this is Bhoomika. I'm a student in the MSP class at CMU.

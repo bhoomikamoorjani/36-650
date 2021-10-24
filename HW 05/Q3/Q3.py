@@ -20,7 +20,7 @@ def number_of_edits(str1_2, str2_2, m,n):
             elif m<n:
                 j,count=j+1, count+1
             else:
-                i,j=i+1, j+1
+                i,j,count=i+1, j+1, count+1
         else:
             i,j=i+1, j+1
     if i<m or j<n:

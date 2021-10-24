@@ -1,3 +1,5 @@
+"""
+#Already installed in Q6
 import subprocess
 import sys 
 
@@ -5,7 +7,7 @@ def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
     
 install("psycopg2-binary")
-
+"""
 import psycopg2
 
 conn = psycopg2.connect(host="localhost", 

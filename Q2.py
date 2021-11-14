@@ -1,0 +1,33 @@
+#Question 2
+
+class Queue:
+    inner_list = []
+    counter = 0
+    
+    def enqueue(self, value):
+        self.inner_list.insert(self.counter, value)
+        self.counter = self.counter + 1
+        
+    def dequeue(self):
+        value = self.inner_list.pop(0)
+        return value
+    
+    def delete(self,item):
+        popped=[]
+        for i in range(0,len(self.inner_list)):
+            popped.append(self.dequeue())
+            if popped[i] != item:
+                self.enqueue(popped[i])
+        return self.inner_list
+
+# Test Case
+obj = Queue()
+obj.enqueue(5)
+obj.enqueue(7)
+obj.enqueue(13)
+obj.enqueue(4)
+obj.enqueue(7)
+
+obj.delete(7)
+
+print(obj.dequeue())
